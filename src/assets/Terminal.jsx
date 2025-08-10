@@ -62,15 +62,17 @@ const Terminal = () => {
         return `<div class="socials-box">
       <div class="social-line">
         <span class="social-label">GitHub —</span>
-        <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">https://github.com/YourKrishhh69</a>
+        <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">
+  YourKrishhh69
+</a>
       </div>
       <div class="social-line">
         <span class="social-label">LinkedIn —</span>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">https://linkedin.com/in/yourusername</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">Comming-soom</a>
       </div>
       <div class="social-line">
         <span class="social-label">X —</span>
-        <a href="https://x.com/Krishshah200622" target="_blank" class="social-link">https://x.com/Krishshah200622</a>
+        <a href="https://x.com/Krishshah200622" target="_blank" class="social-link">Krishshah200622</a>
       </div>
       <div class="social-line">
         <span class="social-label">Email —</span>
