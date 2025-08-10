@@ -74,7 +74,8 @@ const Terminal = () => {
       </div>
       <div class="social-line">
         <span class="social-label">Email —</span>
-        <a href="mailto:krishshah200622@gmail.com" class="social-link">krishshah200622@gmail.com</a>
+        <a href="mailto:krishshah200622@gmail.com" class="social-link">krishshah200622@gmail.com
+</a>
       </div>
     </div>
   `;
