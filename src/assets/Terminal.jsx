@@ -62,7 +62,7 @@ const Terminal = () => {
         return `<div class="socials-box">
       <div class="social-line">
         <span class="social-label">GitHub —</span>
-        <a href="https://github.com/yourusername" target="_blank" class="social-link">https://github.com/YourKrishhh69</a>
+        <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">https://github.com/YourKrishhh69</a>
       </div>
       <div class="social-line">
         <span class="social-label">LinkedIn —</span>
