@@ -63,7 +63,7 @@ const Terminal = () => {
       <div class="social-line">
         <span class="social-label">GitHub —</span>
         <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">YourKrishhh69</a>
-      </div>
+
       <div class="social-line">
         <span class="social-label">LinkedIn —</span>
         <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">Comming-soom</a>
