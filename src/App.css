@@ -1,0 +1,384 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0e0b0b;
+  color: #00ff00;
+  font-family: monospace;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* ===== Terminal Frame ===== */
+.terminal {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #0e0b0b;
+  border: none;
+  color: #d1c62d;
+  font-weight: bolder;
+}
+
+.terminal-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: transparent;
+  padding-right: 5px;
+  word-wrap: break-word;
+}
+
+/* ===== Terminal Elements ===== */
+.input-line, .submitted-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.prompt {
+  margin-right: 0.5rem;
+  color: #173dd5;
+}
+
+.command-input {
+  background-color: transparent;
+  border: none;
+  color: orange;
+  font-family: monospace;
+  outline: none;
+  width: 100%;
+}
+
+.output-line {
+  margin: 4px 0;
+  white-space: pre-wrap;
+}
+
+/* ===== Terminal Header ===== */
+.header {
+  color: orange;
+}
+
+.username {
+  color: white;
+}
+
+.host {
+  color: #bc2308;
+}
+
+.path {
+  color: white;
+}
+
+.help {
+  color: orange;
+}
+
+.last {
+  color: white;
+}
+
+.terminalintro {
+  font-size: 0.9rem;
+  color: #5b7cff;
+  font-weight: bold;
+}
+
+/* ===== Terminal Skill Lines ===== */
+.terminal-skill-line {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  margin: 6px 0;
+  color: #cfcfcf;
+  gap: 10px;
+}
+
+.skill-label {
+  color: #f39c12;
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.skill-value {
+  color: #e0e0e0;
+  flex: 1;
+  min-width: 200px;
+  word-break: break-word;
+}
+
+/* ===== Social Section ===== */
+.terminal-social-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  margin: 6px 0;
+  font-size: 14px;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Ensures it scrolls if needed on smaller devices */
+}
+
+
+.social-label {
+  color: #f39c12;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.social-value a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.social-value a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Special Formatting ===== */
+.section-title {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.command {
+  color: orange;
+  font-weight: bold;
+}
+
+.desc {
+  color: #aaa;
+}
+
+.project-name {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.hello {
+  margin-top: 0.5rem;
+  color: #d17f26;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.value {
+  color: #cfcfcf;
+  font-family: monospace;
+}
+
+/* ===== Terminal Head ===== */
+.head {
+  height: 35px;
+  background-color: rgb(49, 48, 48);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.head .button {
+  display: flex;
+  gap: 15px;
+  width: 100px;
+}
+
+.head .button div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+
+.head .title {
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: -10vw;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+/* ===== Name + Layout Section ===== */
+.mainframe {
+  flex-grow: 1;
+  padding: 10px 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainline {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.name {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  text-shadow: 4px 4px 6px gray;
+  margin-bottom: 10px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.flexbox {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== Scrollbar ===== */
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background: #000;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background-color: #4ee25a;
+  border-radius: 3px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .terminal {
+    max-width: 100%;
+    height: 68vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .head .button {
+    width: 80px;
+    gap: 10px;
+  }
+
+  .head .title {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+}
+
+/* ******************************************* */
+.terminal-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+terminal-project-line {
+  background-color: transparent;
+  color: #f9826c;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  max-width: 90vw;
+  width: fit-content;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: 'Courier New', monospace;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #f9826c;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-description {
+  color: #706363;
+  font-size: 0.95rem;
+  padding-left: 2rem;
+  line-height: 1.7;
+  white-space: normal;
+}
+
+/* ****************************** */
+.socials-box {
+  background-color: #030303;
+  padding: 1rem;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.social-line {
+  margin-bottom: 1.2rem;
+  font-family: monospace;
+}
+
+.social-label {
+  font-weight: bold;
+  color: #f39c12; /* orange-like color */
+  display: inline-block;
+  min-width: 90px;
+}
+
+.social-link {
+  color: #00aaff;
+  text-decoration: none;
+  word-break: break-all;
+  font-size: 15px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+
+
