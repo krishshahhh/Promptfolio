@@ -25,6 +25,7 @@ const Terminal = () => {
         <span class="command">about</span>     : <span class="desc">Who I am?</span><br/>
         <span class="command">skills</span>    : <span class="desc">What I use!</span><br/>
         <span class="command">projects</span>  : <span class="desc">Code Highlights</span><br/>
+        <span class="command">blogs</span>  : <span class="desc">Dev Diaries</span><br/>
         <span class="command">socials</span>   : <span class="desc">Contact info</span><br/>
         <span class="command">clear</span>     : <span class="desc">Clear terminal</span>
         `;
@@ -75,6 +76,8 @@ const Terminal = () => {
         <a href="mailto:krishshah200622@example.com" class="social-link">krishshah200622@example.com</a>
       </div>
     </div>`;
+     case "blogs":
+    window.location.href = "https://devkrish.vercel.app";
       case "clear":
         setLines([{ type: "input", value: "" }]);
         return;
