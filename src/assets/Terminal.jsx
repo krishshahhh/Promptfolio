@@ -28,7 +28,6 @@ const Terminal = () => {
         <span class="command">✒️ blogs</span>     : <span class="desc">Dev Diaries</span><br/>
         <span class="command">🌐 socials</span>   : <span class="desc">Contact info</span><br/>
         <span class="command">🧹 clear</span>     : <span class="desc">Clear terminal</span>
-        
         `;
       case "about":
         return `
@@ -59,7 +58,23 @@ const Terminal = () => {
   </div>
 </div>`;
       case "socials":
-        return ``;
+        return `
+      <div class="social-line">
+        <span class="social-label">GitHub —</span>
+        <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">github.com/YourKrishhh69</a>
+      </div>
+      <div class="social-line">
+        <span class="social-label">LinkedIn —</span>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">linkedin.com/in/yourusername</a>
+      </div>
+      <div class="social-line">
+        <span class="social-label">X —</span>
+        <a href="https://x.com/Krishshah200622" target="_blank" class="social-link">x.com/Krishshah200622</a>
+      </div>
+      <div class="social-line">
+        <span class="social-label">Email —</span>
+        <a href="mailto:krishshah200622@example.com" class="social-link">krishshah200622@example.com</a>
+      </div>`;
      case "blogs":
     window.location.href = "https://devkrish.vercel.app";
       case "clear":
@@ -154,21 +169,3 @@ const Terminal = () => {
 };
 
 export default Terminal;
-<div class="socials-box">
-      <div class="social-line">
-        <span class="social-label">GitHub —</span>
-        <a href="https://github.com/YourKrishhh69" target="_blank" class="social-link">github.com/YourKrishhh69</a>
-      </div>
-      <div class="social-line">
-        <span class="social-label">LinkedIn —</span>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">linkedin.com/in/yourusername</a>
-      </div>
-      <div class="social-line">
-        <span class="social-label">X —</span>
-        <a href="https://x.com/Krishshah200622" target="_blank" class="social-link">x.com/Krishshah200622</a>
-      </div>
-      <div class="social-line">
-        <span class="social-label">Email —</span>
-        <a href="mailto:krishshah200622@example.com" class="social-link">krishshah200622@example.com</a>
-      </div>
-    </div>
