@@ -39,8 +39,7 @@ const Terminal = () => {
         return `
         <div class="terminal-skill-line">
           <span class="skill-label">Languages —</span>
-          <span class="skill-value">JavaScript, Python, TypeScript, C++,
-          <br>Go (in progress)</span>
+          <span class="skill-value">JavaScript, Python, TypeScript, C++,</span>
         </div>
         <div class="terminal-skill-line">
           <span class="skill-label">Frameworks —</span>
@@ -56,6 +55,12 @@ const Terminal = () => {
   <div class="project-description">
      is a terminal-style developer portfolio built with React and JavaScript.<br>
      Navigate with CLI-like commands — no GitHub repo, just raw custom code.
+  </div>
+  <div class="terminal-project-line">
+  <div class="project-title">Dev Diary🐞</div>
+  <div class="project-description">
+     Interactive React dev diary for tracking progress, ideas, and challenges during project development."
+     Want it more casual, professional, or technical?
   </div>
 </div>`;
       case "socials":
