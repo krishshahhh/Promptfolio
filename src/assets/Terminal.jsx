@@ -39,7 +39,7 @@ const Terminal = () => {
         return `
         <div class="terminal-skill-line">
           <span class="skill-label">Languages —</span>
-          <span class="skill-value">JavaScript, Python, TypeScript, C++,</span>
+          <span class="skill-value">JavaScript, Python, TypeScript, C++, Go (in progress )</span>
         </div>
         <div class="terminal-skill-line">
           <span class="skill-label">Frameworks —</span>
