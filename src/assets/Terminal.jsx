@@ -59,7 +59,8 @@ const Terminal = () => {
   <div class="terminal-project-line">
   <div class="project-title">Dev Diary🐞</div>
   <div class="project-description">
-     Interactive React dev diary for tracking progress, ideas, and challenges during project development."
+     Interactive React dev diary for tracking progress, ideas,
+     and challenges during project development."
      Want it more casual, professional, or technical?
   </div>
 </div>`;
