@@ -361,7 +361,7 @@ terminal-project-line {
 .project-title {
   font-weight: bold;
   font-size: 1.3rem; /* ⬆ was 1.1rem */
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   color: #f9826c;
   display: flex;
   align-items: center;
