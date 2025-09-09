@@ -135,11 +135,15 @@ html, body {
 }
 
 .skill-value {
-  color: #e0e0e0;
-  flex: 1;
-  min-width: 200px;
-  word-break: break-word;
-  font-size: 16px; /* ⬆ bigger */
+  white-space: normal;
+word-wrap: break-word;       /* Legacy support for word wrapping */
+overflow-wrap: break-word;   /* Modern word wrapping */
+word-break: break-word;      /* Break long words if needed */
+color: #e0e0e0;
+flex: 1;
+min-width: 200px;
+font-size: 16px;             /* Larger font size */
+
 }
 
 /* ===== Social Section ===== */
